@@ -3,7 +3,6 @@ import styled from 'styled-components/macro';
 import Heading from '../Heading';
 import Paragraph from '../Paragraph';
 import { breakpoints } from '../Media';
-import coffee from '../../images/coffee.jpg';
 import ipad from '../../images/ipad.jpg';
 import sticker from '../../images/sticker.jpg';
 import comp from '../../images/comp.jpg';
@@ -62,18 +61,7 @@ const CenterTop = styled.div`
         height: unset;
     }
 `;
-const CenterBot = styled.div`
-    grid-area: centerbot;
-    background-image: url(${coffee});
-    border-radius: 4px;
-    background-size: cover;
-    height: auto;
-    background-position: center top;
 
-    @media (min-width: ${breakpoints.mobileMax}) {
-        height: unset;
-    }
-`;
 const GridRight = styled.div`
     grid-area: Right;
     height: 220px;
@@ -176,7 +164,7 @@ function InstagramGrid(props) {
             <RightGrid>
                 <GridLeft />
                 <CenterTop />
-                <CenterBot />
+                {/* <CenterBot /> */}
                 <GridRight />
             </RightGrid>
         </InstagramCTA>

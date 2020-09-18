@@ -4,14 +4,11 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import { breakpoints } from '../components/Media';
-import Logo from '../components/Logo';
+// import Logo from '../components/Logo';
 import Heading from '../components/Heading';
 import Paragraph from '../components/Paragraph';
 import Footer from '../components/footer';
-import ProjectRow from '../components/ProjectRow';
 import ProjectRow2 from '../components/ProjectRow2';
-import FullProjectRow from '../components/FullProjectRow';
-import LandingImage from '../images/LandingImage.jpg';
 import HeadingWrap from '../components/HeadingWrap';
 import '../index.css';
 import { Float } from '../styles';
@@ -110,29 +107,6 @@ const SkillContent = styled.div`
     width: 100%;
 `;
 
-const HeadingImage = styled.div`
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    width: 100%;
-    border-radius: 4px;
-    height: 300px;
-    background-size: cover;
-    background-image: url(${LandingImage});
-    background-color: #f5f5f5;
-    background-position: center;
-    transform: translateY(30px);
-    opacity: 0;
-    animation: ${Float} 1s 0.6s forwards;
-
-    @media (min-width: ${breakpoints.mobileMax}) {
-        width: 100%;
-        height: 400px;
-        background-position-x: right;
-        background-position-y: center;
-    }
-`;
-
 const SubParagraph = styled(Paragraph)`
     margin-top: 10px;
     max-width: unset;
@@ -156,16 +130,13 @@ class Page extends React.Component {
     #     # #       #    #    # #      #####  #          
     #     # #       #    #    # #      #   #  #      ### 
     #     # #       #    #    # ###### #    # ###### ### `);
-        console.log('This website was designed and built by Julia Johnson ');
+        console.log('This website was designed and built by Manivannan Baskaran ');
     }
 
     render() {
         return (
             <>
                 <Layout>
-                    {/* <Link title='Home - Julia Johnson' to='/'>
-                        <Logo />
-                    </Link> */}
                     <Helmet>
                         <title>
                             Manivannan Baskaran - Full Stack Developer
@@ -180,35 +151,23 @@ class Page extends React.Component {
                         />
                         <meta property='og:type' content='website' />
                         <meta
-                            property='og:url'
-                            content='https://juliacodes.com/'
-                        />
-                        <meta
                             property='og:title'
-                            content='Julia Johnson - Front End Developer - JuliaCodes'
+                            content='Manivannan Baskaran - Front End Developer - Manivannan'
                         />
                         <meta
                             property='og:description'
                             content="Technology has always been at the very core of my interests. From a young age, I've loved the idea of being able to build something new that people around the world can experience and interact with."
                         />
-                        <meta property='og:image' content={LandingImage} />
+                        {/* <meta property='og:image' content={LandingImage} />
                         <meta
                             property='twitter:card'
                             content='summary_large_image'
-                        />
-                        <meta
-                            property='twitter:url'
-                            content='https://juliacodes.com/'
-                        />
-                        <meta
-                            property='twitter:title'
-                            content='Julia Johnson - Front End Developer - JuliaCodes'
-                        />
+                        /> */}
                         <meta
                             property='twitter:description'
                             content="Technology has always been at the very core of my interests. From a young age, I've loved the idea of being able to build something new that people around the world can experience and interact with."
                         />
-                        <meta property='twitter:image' content={LandingImage} />
+                        {/* <meta property='twitter:image' content={LandingImage} /> */}
                         <html lang='en' />
                     </Helmet>
                     <HeadingWrap />
@@ -304,15 +263,9 @@ class Page extends React.Component {
                             </Paragraph>
                         </TextContent>
                     </SubContainer>
-                    {/* <SubContainer>
-                        <ProjectRow />
-                    </SubContainer> */}
                     <SubContainer>
                         <ProjectRow2 />
                     </SubContainer>
-                    {/* <SubContainer>
-                        <FullProjectRow />
-                    </SubContainer> */}
                 </Layout>
                 <Footer instagramDisplay='flex' />
             </>

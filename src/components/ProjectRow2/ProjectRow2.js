@@ -4,9 +4,7 @@ import styled from 'styled-components';
 import { breakpoints } from '../Media';
 import Heading from '../Heading';
 import Paragraph from '../Paragraph';
-import MediumPost from '../../images/MediumPost.jpg';
 import ForecastThumb from '../../images/ForecastThumb.jpg';
-import AwkwardThumb from '../../images/AwkwardThumb.jpg';
 
 const ProjectContainer = styled.div`
     display: flex;
@@ -40,14 +38,6 @@ const ProjectLink = styled(Paragraph)`
 
     span {
         font-size: 20px;
-    }
-`;
-
-const ProjectLinkSoon = styled(ProjectLink)`
-    color: darkgray;
-
-    :hover {
-        border-bottom: 2px solid transparent !important;
     }
 `;
 
@@ -87,15 +77,6 @@ const Project = styled.div`
         margin-bottom: 0px;
     }
 
-    :nth-child(1) {
-        ${ProjectImage} {
-            background-image: url(${AwkwardThumb});
-            background-size: cover;
-            background-position-x: center;
-            background-position-y: center;
-        }
-    }
-
     :nth-child(2) {
         ${ProjectImage} {
             background-image: url(${ForecastThumb});
@@ -106,16 +87,6 @@ const Project = styled.div`
     }
 `;
 
-const ProjectSoon = styled(Project)`
-    :hover {
-        ${ProjectImage} {
-            transform: scale(1);
-        }
-        ${ProjectLinkSoon} {
-            border-bottom: 2px solid transparent;
-        }
-    }
-`;
 
 const SubHeading = styled(Heading)`
     font-size: 30px;

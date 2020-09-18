@@ -235,16 +235,16 @@ function Forecast(props) {
     return (
         <>
             <Helmet
-                title='Julia Johnson - Forecast'
+                title='Manivannan Baskaran - Forecast'
                 meta={[
                     {
-                        name: 'Julia Johnson',
-                        content: 'Portfolio - Julia Codes',
+                        name: 'Manivannan Baskaran',
+                        content: 'Portfolio - Manivannan',
                     },
                     {
-                        name: 'Julia Johnson',
+                        name: 'Manivannan Baskaran',
                         content:
-                            'Julia Johnson - JuliaCodes - Front End Developer',
+                            'Manivannan - Front End Developer',
                     },
                 ]}
             >
@@ -265,7 +265,7 @@ function Forecast(props) {
                             queries and managing larger sets of data. In this
                             project, I utilized OpenWeatherMap API to gather the
                             weather data and injected this data based on the
-                            user's zip code input.
+                            user's region(city).
                         </Paragraph>
                         <ProjectTable>
                             <tbody>
@@ -284,7 +284,7 @@ function Forecast(props) {
                                             title='React Weather API'
                                             target='_blank'
                                             rel='noreferrer'
-                                            href='https://github.com/juliacodes/react-weather-api'
+                                            href='https://github.com/cibi246/WeatherAPI-React'
                                         >
                                             Repository
                                         </a>
@@ -295,7 +295,7 @@ function Forecast(props) {
                                             title='React Weather API'
                                             target='_blank'
                                             rel='noreferrer'
-                                            href='https://juliacodes-react-weather-api.netlify.com/?_ga=2.21680952.2095234260.1564771306-1974042282.1561901389&_gac=1.15529028.1561901389.Cj0KCQjwu-HoBRD5ARIsAPIPencUBnLPuagkqomokcwvip05K7oU4TtFiMIosaNakqNaPUKbB9ocHWIaAvfyEALw_wcB'
+                                            href='https://determined-ramanujan-ecf323.netlify.app/'
                                         >
                                             View Site
                                         </a>
@@ -389,7 +389,7 @@ function Forecast(props) {
                                 title='React Weather API'
                                 target='_blank'
                                 rel='noreferrer'
-                                href='https://github.com/juliacodes/react-weather-api'
+                                href='https://github.com/cibi246/WeatherAPI-React'
                             >
                                 <ProjectLink>
                                     View Code <span>&#8250;</span>
@@ -401,7 +401,7 @@ function Forecast(props) {
                                 title='React Weather API'
                                 target='_blank'
                                 rel='noreferrer'
-                                href='https://juliacodes-react-weather-api.netlify.com/?_ga=2.21680952.2095234260.1564771306-1974042282.1561901389&_gac=1.15529028.1561901389.Cj0KCQjwu-HoBRD5ARIsAPIPencUBnLPuagkqomokcwvip05K7oU4TtFiMIosaNakqNaPUKbB9ocHWIaAvfyEALw_wcB'
+                                href='https://determined-ramanujan-ecf323.netlify.app/'
                             >
                                 <ProjectLink>
                                     Live Site <span>&#8250;</span>

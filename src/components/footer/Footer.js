@@ -7,7 +7,7 @@ import Logo from '../Logo';
 import { breakpoints } from '../Media';
 import ContactEmail from '../ContactEmail';
 import InstagramGrid from '../InstagramGrid';
-import ProjectRow from '../ProjectRow';
+// import ProjectRow from '../ProjectRow';
 
 const FooterCont = styled.div`
     width: 100%;
@@ -113,7 +113,7 @@ function Footer(props) {
                 <Variable projectDisplay={props.projectDisplay}>
                     <Heading>Other Projects</Heading>
                     <SubContainer>
-                        <ProjectRow />
+                        {/* <ProjectRow /> */}
                     </SubContainer>
                 </Variable>
                 <SubContainer>
