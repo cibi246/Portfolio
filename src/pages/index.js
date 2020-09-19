@@ -14,7 +14,7 @@ import '../index.css';
 import { Float } from '../styles';
 
 const Container = styled.div`
-    margin: 100px 0 200px 0;
+    margin: 50px 0 50px 0;
     width: 100%;
     height: auto;
     display: flex;
@@ -217,7 +217,7 @@ class Page extends React.Component {
                                 <SkillTable>
                                     <row>
                                         <Paragraph>
-                                            <span>&#9675;</span> Javascript ES6
+                                            <span>&#9675;</span> Java
                                         </Paragraph>
                                         <Paragraph>
                                             <span>&#9675;</span> HTML & CSS
@@ -225,27 +225,26 @@ class Page extends React.Component {
                                     </row>
                                     <row>
                                         <Paragraph>
-                                            <span>&#9675;</span> Angular
-                                        </Paragraph>
-                                        <Paragraph>
-                                            <span>&#9675;</span> Java
-                                        </Paragraph>
-                                    </row>
-                                    <row>
-                                        <Paragraph>
                                             <span>&#9675;</span> JEE
                                         </Paragraph>
                                         <Paragraph>
-                                            <span>&#9675;</span>{' '}
-                                            Microservices
+                                            <span>&#9675;</span> Angular
                                         </Paragraph>
                                     </row>
                                     <row>
                                         <Paragraph>
-                                            <span>&#9675;</span> Git
+                                            <span>&#9675;</span> OSGI (Karaf)
                                         </Paragraph>
                                         <Paragraph>
                                             <span>&#9675;</span> SQL
+                                        </Paragraph>
+                                    </row>
+                                    <row>
+                                        <Paragraph>
+                                            <span>&#9675;</span> Javascript
+                                        </Paragraph>
+                                        <Paragraph>
+                                            <span>&#9675;</span> Git
                                         </Paragraph>
                                     </row>
                                 </SkillTable>

@@ -13,8 +13,8 @@ const FooterCont = styled.div`
     width: 100%;
     height: 100%;
     background-color: #fcfcfc;
-    padding: 40px 0 0 0;
-    margin: 50px 0 0 0;
+    /* padding: 40px 0 0 0; */
+    /* margin: 50px 0 0 0; */
 
     a {
         text-align: left;
@@ -23,7 +23,7 @@ const FooterCont = styled.div`
 
     @media (min-width: ${breakpoints.tabletMin}) {
         padding: 0;
-        margin: 100px 0 0 0;
+        /* margin: 100px 0 0 0; */
     }
 `;
 
@@ -43,8 +43,8 @@ const Layout = styled.div`
 
     @media (min-width: ${breakpoints.tabletMin}) {
         max-width: 940px;
-        padding: 100px 0 0 0;
-        margin: 75px auto;
+        /* padding: 100px 0 0 0; */
+        /* margin: 75px auto; */
     }
 
     @media (min-width: ${breakpoints.desktopMin}) {
@@ -110,12 +110,6 @@ function Footer(props) {
     return (
         <FooterCont>
             <Layout>
-                <Variable projectDisplay={props.projectDisplay}>
-                    <Heading>Other Projects</Heading>
-                    <SubContainer>
-                        {/* <ProjectRow /> */}
-                    </SubContainer>
-                </Variable>
                 <SubContainer>
                     <TextContent>
                         <Heading>Let's Build Something Together</Heading>
